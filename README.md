@@ -1,3 +1,5 @@
+![cppcheck-action](https://github.com/99002598/linux_genesis/workflows/cppcheck-action/badge.svg)
+
 Running the code:
 make
 
@@ -30,6 +32,20 @@ jobs:
     name: cppcheck
     runs-on: ubuntu-latest
     steps:
+name: cppcheck-action
+on: [push]
+
+jobs:
+  build:
+    name: cppcheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        
+      - name: Install cppcheck
+        run: sudo apt-get -y install cppcheck
+      - name: Cppcheck code
+        run: cppcheck
       - uses: actions/checkout@v2
         
       - name: Install cppcheck
