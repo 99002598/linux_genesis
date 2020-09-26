@@ -19,3 +19,20 @@ The players and referees enter. Until a group is formed, the organiser is not bo
 organiser is free or not (determined by the organiser mutex).We wait till the organiser is free. Once the organiser is free the group takes that
 organiser(locks the organiser mutex) and enters the court. The players warmUp (player thread is now created) and referee adjusts the equipment.
 Once this is done (find out using thread_join) you leave the organiser (unlock mutex) and start the game.
+
+
+![CI](htt
+name: cppcheck-action
+on: [push]
+
+jobs:
+  build:
+    name: cppcheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        
+      - name: Install cppcheck
+        run: sudo apt-get -y install cppcheck
+      - name: Cppcheck code
+        run: cppcheck ps://github.com/99002598/linux_genesis/workflows/CI/badge.svg)
