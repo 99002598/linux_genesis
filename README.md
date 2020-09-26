@@ -1,3 +1,6 @@
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/32334a753d26480eba6bff7cc9960e6a)](https://app.codacy.com/manual/99002598/linux_genesis?utm_source=github.com&utm_medium=referral&utm_content=99002598/linux_genesis&utm_campaign=Badge_Grade_Settings)
+
 ![cppcheck-action](https://github.com/99002598/linux_genesis/workflows/cppcheck-action/badge.svg)
 
 Running the code:
