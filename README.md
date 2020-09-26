@@ -2,7 +2,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/32334a753d26480eba6bff7cc9960e6a)](https://app.codacy.com/manual/99002598/linux_genesis?utm_source=github.com&utm_medium=referral&utm_content=99002598/linux_genesis&utm_campaign=Badge_Grade_Settings)
 
 ![cppcheck-action](https://github.com/99002598/linux_genesis/workflows/cppcheck-action/badge.svg)
-
+![C/C++ CI](https://github.com/99002598/linux_genesis/workflows/C/C++%20CI/badge.svg)
 Running the code:
 make
 
@@ -10,7 +10,35 @@ Then to obtain the output:
 ./final
 
 Then input one number:n
-2*n players will be totally picked
+2*n players will be totally pickedname: C/C++ CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:name: C/C++ CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
 n referees
 
 1) I have assumed that if a player has a probability > 0.5 of being picked then I pick a player else a referee.
